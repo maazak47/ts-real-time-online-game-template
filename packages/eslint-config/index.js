@@ -6,14 +6,15 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier",
+    "plugin:prettier/recommended",
   ],
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "prettier"],
   parserOptions: {
     sourceType: "module",
     ecmaVersion: 2020,
   },
   rules: {
     "@typescript-eslint/no-non-null-assertion": "off",
+    "prettier/prettier": "error",
   },
 };
