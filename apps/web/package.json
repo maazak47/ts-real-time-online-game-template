@@ -7,7 +7,7 @@
     "dev": "vite --clearScreen false",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint .eslintrc.cjs src/ --ext .ts,.tsx",
+    "lint": "eslint vite.config.ts src/ --ext .ts,.tsx",
     "lint:fix": "pnpm lint --fix"
   },
   "dependencies": {
