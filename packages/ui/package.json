@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts\"",
+    "lint": "eslint index.ts components/ --ext .ts,.tsx",
     "lint:fix": "pnpm lint --fix"
   },
   "dependencies": {
