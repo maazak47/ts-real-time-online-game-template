@@ -1,8 +1,7 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
-import "./style.css";
-import typescriptLogo from "/typescript.svg";
-import { Header, Counter } from "@repo/ui";
+import { createRoot } from 'react-dom/client';
+import './style.css';
+import typescriptLogo from '/typescript.svg';
+import { Header, Counter } from '@repo/ui';
 
 const App = () => (
   <div>
@@ -10,11 +9,7 @@ const App = () => (
       <img src="/vite.svg" className="logo" alt="Vite logo" />
     </a>
     <a href="https://www.typescriptlang.org/" target="_blank">
-      <img
-        src={typescriptLogo}
-        className="logo vanilla"
-        alt="TypeScript logo"
-      />
+      <img src={typescriptLogo} className="logo vanilla" alt="TypeScript logo" />
     </a>
     <Header title="Web" />
     <div className="card">
@@ -23,4 +18,4 @@ const App = () => (
   </div>
 );
 
-createRoot(document.getElementById("app")!).render(<App />);
+createRoot(document.getElementById('app')!).render(<App />);
