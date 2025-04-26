@@ -1,5 +1,4 @@
 {
-  "extends": "@repo/typescript-config/react-library.json",
-  "include": ["."],
-  "exclude": ["node_modules"]
+  "extends": "@repo/typescript-config/react-web.json",
+  "include": ["."]
 }
