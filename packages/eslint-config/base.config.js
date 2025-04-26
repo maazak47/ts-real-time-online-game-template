@@ -7,7 +7,7 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 export const ALL_JS_FILES = '**/*.{js,mjs,cjs,ts,jsx,tsx}';
 
 export default defineConfig([
-  globalIgnores(['node_modules/*']),
+  globalIgnores(['node_modules/*', 'dist/*']),
   tseslint.configs.recommended,
   {
     files: [ALL_JS_FILES],
