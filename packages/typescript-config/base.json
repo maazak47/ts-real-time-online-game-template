@@ -19,5 +19,9 @@
     "strict": true,
     "useDefineForClassFields": true
   },
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.test.ts"
+  ]
 }
