@@ -2,7 +2,7 @@ import { defineConfig } from 'eslint/config';
 import globals from 'globals';
 import pluginReact from 'eslint-plugin-react';
 
-import baseConfig, { ALL_JS_FILES } from '../eslint.config.js';
+import baseConfig, { ALL_JS_FILES } from './base.config.js';
 
 export default defineConfig([
   {
