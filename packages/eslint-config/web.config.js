@@ -9,14 +9,18 @@ export default defineConfig([
     files: [ALL_JS_FILES],
     extends: [baseConfig],
   },
-  pluginReact.configs.flat.recommended,
   {
     files: [ALL_JS_FILES],
     languageOptions: { globals: globals.browser },
   },
   {
     files: ['**/*.{jsx,tsx}'],
+    plugins: { react: pluginReact },
+    settings: {
+      react: { version: 'detect' },
+    },
     rules: {
+      ...pluginReact.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 'off',
     },
   },
