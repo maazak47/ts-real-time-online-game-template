@@ -13,6 +13,13 @@ export default defineConfig([
     files: [ALL_JS_FILES],
     plugins: { js },
     extends: ['js/recommended'],
+    rules: {
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': ['error', {
+        'argsIgnorePattern': '^_',
+        'varsIgnorePattern': '^_',
+      }],
+    },
   },
   {
     files: [ALL_JS_FILES],
