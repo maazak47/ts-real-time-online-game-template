@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import './theme.css';
 import typescriptLogo from '/typescript.svg';
-import { Header, Counter, Button } from '@repo/ui';
+import { Button } from '@repo/ui';
 
 const App = () => (
   <div>
@@ -11,9 +11,7 @@ const App = () => (
     <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
       <img src={typescriptLogo} className="logo vanilla" alt="TypeScript logo" />
     </a>
-    <Header title="Web" />
     <div className="card">
-      <Counter />
       <Button>Click me</Button>
     </div>
   </div>
