@@ -4,5 +4,11 @@
   "author": "Andrew Steinheiser <me@iamandrew.io>",
   "license": "MIT",
   "private": false,
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
+    "tw-animate-css": "^1.2.8"
+  }
 }
