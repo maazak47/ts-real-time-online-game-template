@@ -1,0 +1,8 @@
+{
+  "name": "@repo/tailwind-config",
+  "version": "0.0.1",
+  "author": "Andrew Steinheiser <me@iamandrew.io>",
+  "license": "MIT",
+  "private": false,
+  "type": "module"
+}
