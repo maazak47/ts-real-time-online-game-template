@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-import './style.css';
+import './theme.css';
 import typescriptLogo from '/typescript.svg';
 import { Header, Counter } from '@repo/ui';
 
