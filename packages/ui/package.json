@@ -7,11 +7,14 @@
   "type": "module",
   "exports": {
     ".": "./index.ts",
+    "./theme.css": "./dist/theme.css",
     "./counter": "./components/counter.ts",
     "./header": "./components/header.ts",
     "./setup-counter": "./utils/counter.ts"
   },
   "scripts": {
+    "dev": "tailwindcss -i ./theme.css -o ./dist/theme.css --watch",
+    "build": "tailwindcss -i ./theme.css -o ./dist/theme.css",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "check-types": "tsc --noEmit"
@@ -21,10 +24,14 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@tailwindcss/cli": "^4.1.4",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.4",
     "typescript": "5.5.4"
   }
 }
