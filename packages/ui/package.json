@@ -8,9 +8,8 @@
   "exports": {
     ".": "./index.ts",
     "./theme.css": "./dist/theme.css",
-    "./counter": "./components/counter.ts",
-    "./header": "./components/header.ts",
-    "./setup-counter": "./utils/counter.ts"
+    "./utils": "./utils.ts",
+    "./button": "./components/button.tsx"
   },
   "scripts": {
     "dev": "tailwindcss -i ./theme.css -o ./dist/theme.css --watch",
@@ -20,6 +19,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -30,8 +30,13 @@
     "@tailwindcss/postcss": "^4.1.4",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.503.0",
     "postcss": "^8.5.3",
+    "tailwind-merge": "^3.2.0",
     "tailwindcss": "^4.1.4",
+    "tw-animate-css": "^1.2.8",
     "typescript": "5.5.4"
   }
 }
