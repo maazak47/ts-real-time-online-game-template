@@ -1,5 +1,5 @@
-export { cn } from './utils';
-export { Button } from './components/button';
-export { Dialog } from './components/dialog';
-export { Input } from './components/input';
-export { Label } from './components/label';
+export * from './utils';
+export * from './components/button';
+export * from './components/dialog';
+export * from './components/input';
+export * from './components/label';
